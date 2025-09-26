@@ -16,6 +16,7 @@
                     <suiteXmlFile>testng.xml</suiteXmlFile>
                     <!-- You can add multiple suiteXmlFile entries for multiple TestNG XML files -->
                 </suiteXmlFiles>
+                <argLine>-Dtestng.dtd.http=true</argLine>
         </configuration>
       </plugin>
      
