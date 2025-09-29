@@ -19,13 +19,9 @@ public class LoginTest {
 		
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		driver = new ChromeDriver();
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless=new"); // For newer Chrome versions
-		options.addArguments("--no-sandbox");
-		options.addArguments("--disable-dev-shm-usage");
-		options.addArguments("--remote-allow-origins=*");
+		
 
-		WebDriver driver = new ChromeDriver(options);
+		WebDriver driver = new ChromeDriver();
 		driver.get("file:///F:/Automation%20Testing_Java%20By%20Kiran/Selenium%20Softwares/Selenium%20Softwares/Offline%20Website/Offline%20Website/index.html");
 		driver.manage().window().maximize();
 		
